@@ -1,0 +1,13 @@
+{{#if truncated}}
+<div class="message-recap-truncated-notice">
+    {{t "You have a lot of unread messages, so this recap only covers your most recent ones." }}
+</div>
+{{/if}}
+{{#each sections}}
+<div class="message-recap-section">
+    <h3 class="message-recap-section-title">{{title}}</h3>
+    {{rendered_markdown html}}
+</div>
+{{else}}
+<p>{{t "You're all caught up! There are no unread messages to recap." }}</p>
+{{/each}}

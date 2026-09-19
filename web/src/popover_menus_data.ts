@@ -146,6 +146,8 @@ type GearMenuContext = {
     color_scheme_values: ColorSchemeValues;
     web_font_size_px: number;
     web_line_height_percent: number;
+    can_summarize_topics: boolean;
+    show_ai_features: boolean;
 };
 
 type BillingInfo = {
@@ -515,6 +517,8 @@ export function get_gear_menu_content_context(): GearMenuContext {
         // information density settings
         web_font_size_px: user_settings.web_font_size_px,
         web_line_height_percent: user_settings.web_line_height_percent,
+        can_summarize_topics: settings_data.user_can_summarize_topics(),
+        show_ai_features: !user_settings.hide_ai_features,
     };
 }
 

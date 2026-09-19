@@ -1,6 +1,6 @@
-import Handlebars from "handlebars/runtime.js";
-import assert from "minimalistic-assert";
-import {z} from "zod/mini";
+import Handlebars from "../../scripts/node_modules/.pnpm/handlebars@4.7.9_patch_hash=53ad8d748fa2ca3a7a0502c46f2ed1236eef8162efec84c06849dc83ad9e28e9/node_modules/handlebars/runtime.js";
+import assert from "../../scripts/node_modules/.pnpm/@types+minimalistic-assert@1.0.3/node_modules/@types/minimalistic-assert/index";
+import {z} from ".pnpm/zod@4.4.3/node_modules/zod/mini";
 
 import * as blueslip from "./blueslip.ts";
 import * as common from "./common.ts";

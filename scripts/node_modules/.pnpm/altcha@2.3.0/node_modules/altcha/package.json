@@ -1,0 +1,114 @@
+{
+  "name": "altcha",
+  "description": "Privacy-first CAPTCHA widget, compliant with global regulations (GDPR/HIPAA/CCPA/LGDP/DPDPA/PIPL) and WCAG accessible. No tracking, self-verifying.",
+  "version": "2.3.0",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Regeci",
+    "url": "https://altcha.org"
+  },
+  "homepage": "https://altcha.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altcha-org/altcha.git"
+  },
+  "type": "module",
+  "keywords": [
+    "altcha",
+    "altcaptcha",
+    "captcha",
+    "captcha alternative",
+    "recaptcha",
+    "hcaptcha",
+    "antispam",
+    "anti-abuse",
+    "anti-bot",
+    "anti-ddos",
+    "anti-scraping",
+    "ddos",
+    "security",
+    "pow",
+    "proof-of-work",
+    "spam",
+    "spam filter",
+    "protection",
+    "svelte"
+  ],
+  "files": [
+    "dist",
+    "dist_external",
+    "dist_i18n"
+  ],
+  "main": "./dist/altcha.umd.cjs",
+  "module": "./dist/altcha.js",
+  "types": "./dist/altcha.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/altcha.js",
+      "require": "./dist/altcha.umd.cjs"
+    },
+    "./altcha.css": {
+      "import": "./dist_external/altcha.css",
+      "require": "./dist_external/altcha.css"
+    },
+    "./external": {
+      "import": "./dist_external/altcha.js",
+      "require": "./dist_external/altcha.umd.cjs"
+    },
+    "./worker": {
+      "import": "./dist_external/worker.js",
+      "require": "./dist_external/worker.js"
+    },
+    "./i18n": {
+      "import": "./dist/altcha.i18n.js",
+      "require": "./dist/altcha.i18n.umd.cjs"
+    },
+    "./i18n/*": {
+      "import": "./dist_i18n/*.js",
+      "require": "./dist_i18n/*.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:bundle && npm run build:external && npm run build:i18n",
+    "build:bundle": "rimraf dist && vite build && vite build -c vite.bundle-i18n.config.ts && cp src/declarations.d.ts dist/altcha.d.ts && cp src/declarations.d.ts dist/altcha.i18n.d.ts",
+    "build:external": "rimraf dist_external && vite build -c vite.external.config.ts && cp src/declarations.d.ts dist_external/altcha.d.ts",
+    "build:i18n": "rimraf dist_i18n && find src/i18n -type f -name '*.ts' | xargs -I {} vite build -c vite.i18n.config.ts -- {}",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write ./src/**/*",
+    "test": "vitest run tests/helpers.test.ts",
+    "test:e2e": "testcafe chrome e2e/altcha.fixture.ts --hostname localhost",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/csso": "^5.0.4",
+    "@types/node": "^20.16.3",
+    "@types/react": "^19.1.14",
+    "csso": "^5.0.5",
+    "husky": "^9.1.5",
+    "prettier": "3.2.5",
+    "prettier-plugin-svelte": "^3.2.6",
+    "rimraf": "^6.0.1",
+    "sass": "^1.77.8",
+    "svelte": "^5.28.6",
+    "svelte-check": "^4.0.0",
+    "testcafe": "^3.7.2",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4",
+    "vite": "^7.1.7",
+    "vite-plugin-string": "^1.2.3",
+    "vitest": "^3.0.8"
+  },
+  "dependencies": {
+    "@altcha/crypto": "^0.0.1"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.18.0"
+  },
+  "overrides": {
+    "tmp": "0.2.5"
+  }
+}

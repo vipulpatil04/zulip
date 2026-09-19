@@ -1,0 +1,88 @@
+{
+  "name": "@koa/bodyparser",
+  "version": "6.1.0",
+  "description": "Koa body parsing middleware",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "test": "jest --detectOpenHandles",
+    "test-ci": "npm run test -- --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "koa",
+    "body",
+    "request-body",
+    "bodyParser",
+    "json",
+    "urlencoded",
+    "text",
+    "xml"
+  ],
+  "author": {
+    "name": "dead_horse",
+    "email": "dead_horse@qq.com",
+    "url": " http://deadhorse.me"
+  },
+  "contributors": [
+    {
+      "name": "Imed Jaberi",
+      "email": "imed-jaberi@outlook.com"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/koa": "^3.0.1",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/node": "^25.0.10",
+    "@types/supertest": "^6.0.3",
+    "@types/type-is": "^1.6.7",
+    "eslint-config-xo-lass": "^2.0.1",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "koa": "^3.1.1",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "xo": "^0.60.0"
+  },
+  "dependencies": {
+    "@types/co-body": "^6.1.3",
+    "co-body": "^6.2.0",
+    "lodash.merge": "^4.6.2",
+    "type-is": "^2.0.1"
+  },
+  "peerDependencies": {
+    "koa": ">=2"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/koajs/bodyparser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koajs/bodyparser/issues"
+  },
+  "homepage": "https://github.com/koajs/bodyparser",
+  "publishConfig": {
+    "access": "public"
+  }
+}

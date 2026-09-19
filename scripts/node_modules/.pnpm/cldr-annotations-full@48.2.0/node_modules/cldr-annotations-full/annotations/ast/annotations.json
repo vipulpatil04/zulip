@@ -1,0 +1,173 @@
+{
+  "annotations": {
+    "identity": {
+      "language": "ast"
+    },
+    "annotations": {
+      "🤣": {
+        "default": [
+          "cara",
+          "risa",
+          "rodando",
+          "rodando pel suelu de risa",
+          "suelu"
+        ],
+        "tts": [
+          "rodando pel suelu de risa"
+        ]
+      },
+      "😂": {
+        "default": [
+          "allegría",
+          "cara",
+          "cara llorando d’allegría",
+          "llárima",
+          "risa"
+        ],
+        "tts": [
+          "cara llorando d’allegría"
+        ]
+      },
+      "😘": {
+        "default": [
+          "besu",
+          "cara",
+          "cara tirando un besu"
+        ],
+        "tts": [
+          "cara tirando un besu"
+        ]
+      },
+      "😗": {
+        "default": [
+          "besu",
+          "cara",
+          "cara besando"
+        ],
+        "tts": [
+          "cara besando"
+        ]
+      },
+      "☺": {
+        "default": [
+          "cara sorriendo"
+        ],
+        "tts": [
+          "cara sorriendo"
+        ]
+      },
+      "🤳": {
+        "default": [
+          "selfie"
+        ],
+        "tts": [
+          "selfie"
+        ]
+      },
+      "👅": {
+        "default": [
+          "cuerpu",
+          "llingua"
+        ],
+        "tts": [
+          "llingua"
+        ]
+      },
+      "👄": {
+        "default": [
+          "boca",
+          "llabios"
+        ],
+        "tts": [
+          "boca"
+        ]
+      },
+      "💏": {
+        "default": [
+          "besu"
+        ],
+        "tts": [
+          "besu"
+        ]
+      },
+      "👪": {
+        "default": [
+          "familia"
+        ],
+        "tts": [
+          "familia"
+        ]
+      },
+      "💍": {
+        "default": [
+          "aniellu",
+          "diamante"
+        ],
+        "tts": [
+          "aniellu"
+        ]
+      },
+      "💎": {
+        "default": [
+          "diamante",
+          "piedra preciosa",
+          "xema",
+          "xoya"
+        ],
+        "tts": [
+          "piedra preciosa"
+        ]
+      },
+      "0⃣": {
+        "tts": [
+          "tecles: 0"
+        ]
+      },
+      "1⃣": {
+        "tts": [
+          "tecles: 1"
+        ]
+      },
+      "2⃣": {
+        "tts": [
+          "tecles: 2"
+        ]
+      },
+      "3⃣": {
+        "tts": [
+          "tecles: 3"
+        ]
+      },
+      "4⃣": {
+        "tts": [
+          "tecles: 4"
+        ]
+      },
+      "5⃣": {
+        "tts": [
+          "tecles: 5"
+        ]
+      },
+      "6⃣": {
+        "tts": [
+          "tecles: 6"
+        ]
+      },
+      "7⃣": {
+        "tts": [
+          "tecles: 7"
+        ]
+      },
+      "8⃣": {
+        "tts": [
+          "tecles: 8"
+        ]
+      },
+      "9⃣": {
+        "tts": [
+          "tecles: 9"
+        ]
+      }
+    }
+  }
+}

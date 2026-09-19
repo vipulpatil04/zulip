@@ -768,6 +768,10 @@ MAX_DEACTIVATED_REALM_DELETION_DAYS: int | None = None
 TOPIC_SUMMARIZATION_MODEL: str | None = None
 TOPIC_SUMMARIZATION_API_BASE: str | None = None
 TOPIC_SUMMARIZATION_PARAMETERS: dict[str, Any] = {}
+# Uses the same API base/key as topic summarization above; only the model
+# and per-request parameters differ.
+TOPIC_DRIFT_DETECTION_MODEL: str | None = None
+TOPIC_DRIFT_DETECTION_PARAMETERS: dict[str, Any] = {}
 # Price per token for input and output tokens, and maximum cost. Units
 # are arbitrarily, but typically will be USD.
 INPUT_COST_PER_GIGATOKEN: int = 0

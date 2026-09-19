@@ -1,0 +1,62 @@
+{
+  "model": "openai/gpt-oss-20b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are analyzing a chat topic in the Zulip team chat app to detect whether the discussion has drifted away from its title: sustained off-title discussion, or a new sub-thread that has taken over the conversation. A topic that is still generally on-subject, even if it has wandered briefly, has not drifted."
+    },
+    {
+      "role": "user",
+      "content": "The topic is currently titled \"printer setup issues\". Here are the messages in it, in order:\n[{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 0: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 1: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 2: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 3: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 4: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 5: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 6: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 7: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 8: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 9: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 10: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 11: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 12: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 13: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 14: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 15: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 16: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 17: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 18: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Printer troubleshooting note 19: checked drivers and toner.\"},{\"sender\":\"King Hamlet\",\"content\":\"Forget the printer for now, is everyone in for the hackathon this weekend?\"},{\"sender\":\"King Hamlet\",\"content\":\"Yes! Let's form a team.\"},{\"sender\":\"King Hamlet\",\"content\":\"What should we build?\"},{\"sender\":\"King Hamlet\",\"content\":\"An internal on-call tracking tool.\"},{\"sender\":\"King Hamlet\",\"content\":\"I'll book a room for Saturday.\"}]\n\nRespond with only a JSON object of the form {\"drifted\": true or false, \"suggested_title\": \"...\"}. Set drifted to true only if the discussion has meaningfully moved away from the given title. If drifted is true, suggested_title should be a short, specific title (under 60 characters) for what the topic is actually about now. If drifted is false, suggested_title should be an empty string. Respond with nothing but that JSON object."
+    }
+  ],
+  "response": {
+    "id": "chatcmpl-d39e712f-2ac0-4f6a-b3ff-21c8c305913a",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"drifted\": true, \"suggested_title\": \"Hackathon planning: team formation and project ideas\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "Need detect drift: after note 19, discussion switches to hackathon. So yes drifted. Suggested title: \"Hackathon planning: team formation and project ideas\"."
+        }
+      }
+    ],
+    "created": 1789790629,
+    "model": "openai/gpt-oss-20b",
+    "object": "chat.completion",
+    "metadata": null,
+    "moderation": null,
+    "service_tier": "auto",
+    "system_fingerprint": "fp_99996fee8e",
+    "usage": {
+      "completion_tokens": 67,
+      "prompt_tokens": 721,
+      "total_tokens": 788,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 35,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null
+      },
+      "prompt_tokens_details": null,
+      "queue_time": 0.031448155,
+      "prompt_time": 0.043748802,
+      "completion_time": 0.068800972,
+      "total_time": 0.112549774
+    },
+    "usage_breakdown": null,
+    "x_groq": {
+      "id": "req_01m2vxbbyeerb96dfxct9pqne5",
+      "seed": 1745950303
+    }
+  }
+}

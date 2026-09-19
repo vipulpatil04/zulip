@@ -95,6 +95,7 @@ import * as stream_ui_updates from "./stream_ui_updates.ts";
 import * as sub_store from "./sub_store.ts";
 import * as submessage from "./submessage.ts";
 import * as theme from "./theme.ts";
+import * as topic_drift_banner from "./topic_drift_banner.ts";
 import {group_setting_value_schema} from "./types.ts";
 import * as typing_events from "./typing_events.ts";
 import * as unread_ops from "./unread_ops.ts";
@@ -838,6 +839,15 @@ export function dispatch_normal_event(event) {
             submessage.handle_event(submsg);
             break;
         }
+
+        case "topic_drift_suggestion":
+            topic_drift_banner.show_topic_drift_suggestion({
+                stream_id: event.stream_id,
+                topic_name: event.topic_name,
+                suggested_title: event.suggested_title,
+                message_id: event.message_id,
+            });
+            break;
 
         case "subscription":
             switch (event.op) {

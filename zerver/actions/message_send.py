@@ -83,7 +83,7 @@ from zerver.lib.streams import (
 from zerver.lib.string_validation import check_stream_name
 from zerver.lib.thumbnail import manifest_and_get_user_upload_previews, rewrite_thumbnailed_images
 from zerver.lib.timestamp import timestamp_to_datetime
-from zerver.lib.topic import get_topic_display_name, participants_for_topic
+from zerver.lib.topic import get_topic_display_name, messages_for_topic, participants_for_topic
 from zerver.lib.topic_link_util import get_message_link_label, get_stream_link_syntax
 from zerver.lib.types import UserProfileChangeDict
 from zerver.lib.url_encoding import message_link_url, stream_message_url
@@ -1010,6 +1010,14 @@ def get_message_url_and_link(
     return url, link
 
 
+# Number of messages a topic must accumulate before we check it once for
+# title drift. Checking only at this fixed threshold (rather than on every
+# message, or repeatedly afterward) keeps the LLM cost bounded and avoids
+# nagging admins about topics that are still short enough that a title
+# mismatch is not yet a real problem.
+TOPIC_DRIFT_CHECK_MESSAGE_THRESHOLD = 30
+
+
 @transaction.atomic(savepoint=False)
 def do_send_messages(
     send_message_requests_maybe_none: Sequence[SendMessageRequest | None],
@@ -1387,6 +1395,27 @@ def do_send_messages(
                     user_ids_who_can_access_sender
                 )
                 event["user_ids_without_access_to_sender"] = list(user_ids_without_access_to_sender)
+
+            # Check for topic title drift once a topic reaches a fixed
+            # message count. We check for an exact match rather than
+            # ">=" so this fires (at most) once per topic; the LLM call
+            # itself happens asynchronously in a queue worker so it
+            # never adds latency to sending this message.
+            topic_message_count = messages_for_topic(
+                send_request.realm.id,
+                send_request.message.recipient_id,
+                send_request.message.topic_name(),
+            ).count()
+            if topic_message_count == TOPIC_DRIFT_CHECK_MESSAGE_THRESHOLD:
+                queue_event_on_commit(
+                    "topic_drift_check",
+                    {
+                        "message_id": send_request.message.id,
+                        "realm_id": send_request.realm.id,
+                        "stream_id": send_request.stream.id,
+                        "topic_name": send_request.message.topic_name(),
+                    },
+                )
 
         if send_request.local_id is not None:
             event["local_id"] = send_request.local_id

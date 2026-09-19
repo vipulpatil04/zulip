@@ -75,6 +75,7 @@ import * as message_fetch from "./message_fetch.ts";
 import * as message_list_hover from "./message_list_hover.ts";
 import * as message_list_tooltips from "./message_list_tooltips.ts";
 import * as message_lists from "./message_lists.ts";
+import * as message_recap from "./message_recap.ts";
 import * as message_reminder from "./message_reminder.ts";
 import * as message_scroll from "./message_scroll.ts";
 import * as message_view from "./message_view.ts";
@@ -651,6 +652,7 @@ export async function initialize_everything(state_data) {
     });
     overlays.initialize();
     invite.initialize();
+    message_recap.initialize();
     message_view_header.initialize();
     server_events_state.initialize({
         ...state_data.server_events_state,

@@ -232,8 +232,15 @@ DEMO_ORG_DEADLINE_DAYS = 30
 if external_host_env is None and not IS_DEV_DROPLET:
     USING_CAPTCHA = True
 
-TOPIC_SUMMARIZATION_MODEL = "llama-3.3-70b-versatile"
+TOPIC_SUMMARIZATION_MODEL = "openai/gpt-oss-120b"
 TOPIC_SUMMARIZATION_API_BASE = "https://api.groq.com/openai/v1"
+TOPIC_SUMMARIZATION_PARAMETERS = {"max_tokens": 2000, "reasoning_effort": "low"}
+# Topic drift detection uses the same Groq account and API base as topic
+# summarization above, but a smaller/faster model: it runs on every topic
+# that crosses the message threshold, so latency and cost matter more here
+# than summary quality does.
+TOPIC_DRIFT_DETECTION_MODEL = "openai/gpt-oss-20b"
+TOPIC_DRIFT_DETECTION_PARAMETERS = {"max_tokens": 1000, "reasoning_effort": "low"}
 # Defaults based on groq's pricing for Llama 3.3 70B Versatile 128k.
 # https://groq.com/pricing/
 OUTPUT_COST_PER_GIGATOKEN = 590

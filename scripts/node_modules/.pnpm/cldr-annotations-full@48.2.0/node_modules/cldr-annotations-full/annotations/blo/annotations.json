@@ -1,0 +1,633 @@
+{
+  "annotations": {
+    "identity": {
+      "language": "blo"
+    },
+    "annotations": {
+      "‐": {
+        "tts": [
+          "ʊbɔcǝra"
+        ]
+      },
+      ",": {
+        "default": [
+          "ʊŋur"
+        ],
+        "tts": [
+          "ʊŋur"
+        ]
+      },
+      ";": {
+        "default": [
+          "ʊyiɖuŋur"
+        ],
+        "tts": [
+          "ʊyiɖuŋur"
+        ]
+      },
+      ":": {
+        "default": [
+          "ʊkʊɖʊ"
+        ],
+        "tts": [
+          "ʊkʊɖʊ"
+        ]
+      },
+      "!": {
+        "tts": [
+          "biti"
+        ]
+      },
+      "?": {
+        "tts": [
+          "ʊtabʊ"
+        ]
+      },
+      ".": {
+        "tts": [
+          "ʊyiɖu"
+        ]
+      },
+      "…": {
+        "tts": [
+          "ʊsaaʊ̀"
+        ]
+      },
+      "%": {
+        "tts": [
+          "ɩshɩnʊn nɩ"
+        ]
+      },
+      "‰": {
+        "tts": [
+          "miili nɩ"
+        ]
+      },
+      "+": {
+        "tts": [
+          "ʊpelu"
+        ]
+      },
+      "÷": {
+        "tts": [
+          "ʊyʊgʊ"
+        ]
+      },
+      "×": {
+        "tts": [
+          "akpalá"
+        ]
+      },
+      "=": {
+        "tts": [
+          "ɩ lee"
+        ]
+      },
+      "−": {
+        "tts": [
+          "ʊfaaʊ"
+        ]
+      },
+      "🦵": {
+        "tts": [
+          "ʊkei"
+        ]
+      },
+      "👂": {
+        "tts": [
+          "gʊtɔ"
+        ]
+      },
+      "👃": {
+        "tts": [
+          "gɩŋʊnʊ"
+        ]
+      },
+      "🧠": {
+        "tts": [
+          "gʊfaŋa"
+        ]
+      },
+      "🫀": {
+        "tts": [
+          "gɩfolu"
+        ]
+      },
+      "🫁": {
+        "tts": [
+          "akufɛrɛfɛrɛ"
+        ]
+      },
+      "🦷": {
+        "tts": [
+          "gʊnyoo"
+        ]
+      },
+      "🦴": {
+        "tts": [
+          "ŋkǝwa"
+        ]
+      },
+      "👀": {
+        "tts": [
+          "ɩnyine"
+        ]
+      },
+      "👁": {
+        "tts": [
+          "gɩnyine"
+        ]
+      },
+      "👅": {
+        "tts": [
+          "gɩɖanʊ"
+        ]
+      },
+      "👄": {
+        "tts": [
+          "ganɔ"
+        ]
+      },
+      "🐵": {
+        "tts": [
+          "akʊná agayɛ"
+        ]
+      },
+      "🐒": {
+        "tts": [
+          "akʊná"
+        ]
+      },
+      "🦍": {
+        "tts": [
+          "goril"
+        ]
+      },
+      "🦧": {
+        "tts": [
+          "ʊrantan"
+        ]
+      },
+      "🐶": {
+        "tts": [
+          "asna agayɛ"
+        ]
+      },
+      "🐕": {
+        "tts": [
+          "asna"
+        ]
+      },
+      "🦮": {
+        "tts": [
+          "asǝntoŋokafɔnɔrɛ"
+        ]
+      },
+      "🐕‍🦺": {
+        "tts": [
+          "asǝŋkaŋakanama"
+        ]
+      },
+      "🐩": {
+        "tts": [
+          "asna ɩsana pùùù"
+        ]
+      },
+      "🐺": {
+        "tts": [
+          "Asnaŋɔnja abʊmbɔnɔ"
+        ]
+      },
+      "🦊": {
+        "tts": [
+          "asnaŋɔnja ajala"
+        ]
+      },
+      "🦝": {
+        "tts": [
+          "ursijalɩ"
+        ]
+      },
+      "🐱": {
+        "tts": [
+          "ganyaʊ kaayɛ"
+        ]
+      },
+      "🐈": {
+        "tts": [
+          "ganyaʊ"
+        ]
+      },
+      "🐈‍⬛": {
+        "tts": [
+          "ganyaʊ gaɖono"
+        ]
+      },
+      "🦁": {
+        "tts": [
+          "guuni agayɛ"
+        ]
+      },
+      "🐯": {
+        "tts": [
+          "atabɩyarɩ ɩsǝnayar agayɛ"
+        ]
+      },
+      "🐅": {
+        "tts": [
+          "atabɩyarɩ ɩsǝnayar"
+        ]
+      },
+      "🐆": {
+        "tts": [
+          "atabɩyarɩ"
+        ]
+      },
+      "🐴": {
+        "tts": [
+          "asuko agayɛ"
+        ]
+      },
+      "🫎": {
+        "tts": [
+          "ayʊlʊkpatɩ"
+        ]
+      },
+      "🫏": {
+        "tts": [
+          "gakɔŋkɔŋɔ́"
+        ]
+      },
+      "🐎": {
+        "tts": [
+          "asuko"
+        ]
+      },
+      "🦄": {
+        "tts": [
+          "asuko gʊyʊlʊyar"
+        ]
+      },
+      "🦓": {
+        "tts": [
+          "gakɔŋkɔŋɔ́ ɩsǝnayar"
+        ]
+      },
+      "🦌": {
+        "tts": [
+          "gajagʊyʊlʊ"
+        ]
+      },
+      "🦬": {
+        "tts": [
+          "bisɔn"
+        ]
+      },
+      "🐮": {
+        "tts": [
+          "nnanarɩ kaayɛ"
+        ]
+      },
+      "🐂": {
+        "tts": [
+          "nnakoro"
+        ]
+      },
+      "🐃": {
+        "tts": [
+          "ʊkó"
+        ]
+      },
+      "🐄": {
+        "tts": [
+          "nnanarɩ"
+        ]
+      },
+      "🐷": {
+        "tts": [
+          "ʊkuruci agayɛ"
+        ]
+      },
+      "🐖": {
+        "tts": [
+          "ʊkuruci"
+        ]
+      },
+      "🐗": {
+        "tts": [
+          "ʊkuruci aŋɔnja"
+        ]
+      },
+      "🐽": {
+        "tts": [
+          "ʊkuruci agɩŋʊnʊ"
+        ]
+      },
+      "🐏": {
+        "tts": [
+          "nraŋkoro"
+        ]
+      },
+      "🐑": {
+        "tts": [
+          "arama"
+        ]
+      },
+      "🐐": {
+        "tts": [
+          "ʊce"
+        ]
+      },
+      "🐪": {
+        "tts": [
+          "Raakum"
+        ]
+      },
+      "🐫": {
+        "tts": [
+          "Raakum ɩjɩmaajɩmaayar"
+        ]
+      },
+      "🦙": {
+        "tts": [
+          "lamaa"
+        ]
+      },
+      "🦒": {
+        "tts": [
+          "abɔrɩ ʊɖɔlamakayar"
+        ]
+      },
+      "🐘": {
+        "tts": [
+          "abʊrʊ"
+        ]
+      },
+      "🦣": {
+        "tts": [
+          "mamuuf"
+        ]
+      },
+      "🦏": {
+        "tts": [
+          "abʊrʊ gɩŋʊnʊyʊlʊyar"
+        ]
+      },
+      "🦛": {
+        "tts": [
+          "atubʊrʊ"
+        ]
+      },
+      "🐭": {
+        "tts": [
+          "ʊfulǝ agayɛ"
+        ]
+      },
+      "🐁": {
+        "tts": [
+          "ʊfulǝ"
+        ]
+      },
+      "🐀": {
+        "tts": [
+          "ʊshiresʊra"
+        ]
+      },
+      "🐹": {
+        "tts": [
+          "ʊfulǝɖǝuka"
+        ]
+      },
+      "🐰": {
+        "tts": [
+          "garomo kaayɛ"
+        ]
+      },
+      "🐇": {
+        "tts": [
+          "Garomo"
+        ]
+      },
+      "🐿": {
+        "tts": [
+          "gakɔmbɩlɩ"
+        ]
+      },
+      "🦔": {
+        "tts": [
+          "gasǝnɩshɩnʊ"
+        ]
+      },
+      "🦇": {
+        "tts": [
+          "gʊjǝmasʊra"
+        ]
+      },
+      "🐻": {
+        "tts": [
+          "ursi"
+        ]
+      },
+      "🐻‍❄": {
+        "tts": [
+          "ursifɔnɔ"
+        ]
+      },
+      "🐨": {
+        "tts": [
+          "ursi koalaa"
+        ]
+      },
+      "🐼": {
+        "tts": [
+          "ursi panɖaa"
+        ]
+      },
+      "🦥": {
+        "tts": [
+          "gafunfambɔrɩ"
+        ]
+      },
+      "🦦": {
+        "tts": [
+          "lutǝr"
+        ]
+      },
+      "🦨": {
+        "tts": [
+          "mufɛɛtɩ"
+        ]
+      },
+      "🦘": {
+        "tts": [
+          "abɔrɩ ncǝnfǝlǝyar"
+        ]
+      },
+      "🦡": {
+        "tts": [
+          "bɩlɛroo"
+        ]
+      },
+      "🐾": {
+        "tts": [
+          "ɩbɔrɩ banaŋa"
+        ]
+      },
+      "🦃": {
+        "tts": [
+          "tolotolo"
+        ]
+      },
+      "🐔": {
+        "tts": [
+          "ncɩrɩnarɩ"
+        ]
+      },
+      "🐓": {
+        "tts": [
+          "acɩrɩsoro"
+        ]
+      },
+      "🐣": {
+        "tts": [
+          "gacɩrɩpiri gapika"
+        ]
+      },
+      "🐤": {
+        "tts": [
+          "gacɩrɩpiri"
+        ]
+      },
+      "🐥": {
+        "tts": [
+          "gacɩrɩpiri kaayɛ"
+        ]
+      },
+      "🐦": {
+        "tts": [
+          "gasapɩ́"
+        ]
+      },
+      "🐧": {
+        "tts": [
+          "gaprakǝlisapɩ"
+        ]
+      },
+      "🕊": {
+        "tts": [
+          "alikuku afɔnɔ"
+        ]
+      },
+      "🦅": {
+        "tts": [
+          "asáʊ"
+        ]
+      },
+      "🦆": {
+        "tts": [
+          "kpakpafɩʊ"
+        ]
+      },
+      "🦢": {
+        "tts": [
+          "kpakpafɩʊ ʊɖɔlamakayar"
+        ]
+      },
+      "🦉": {
+        "tts": [
+          "nrǝnrǝmǝ"
+        ]
+      },
+      "🦤": {
+        "tts": [
+          "kpakpafɩʊ ɖoóɖoó"
+        ]
+      },
+      "🪶": {
+        "tts": [
+          "gɩsanà"
+        ]
+      },
+      "🦩": {
+        "tts": [
+          "fǝlamiŋgo"
+        ]
+      },
+      "🦚": {
+        "tts": [
+          "tolotolo bʊcǝma"
+        ]
+      },
+      "🦜": {
+        "tts": [
+          "akoo"
+        ]
+      },
+      "🪽": {
+        "tts": [
+          "gʊpra"
+        ]
+      },
+      "🐦‍⬛": {
+        "tts": [
+          "gasapɩ́ gaɖono"
+        ]
+      },
+      "🪿": {
+        "tts": [
+          "kpakpafɩʊ atuja"
+        ]
+      },
+      "🐦‍🔥": {
+        "tts": [
+          "gasapɩ́ fenis"
+        ]
+      },
+      "🐸": {
+        "tts": [
+          "gʊromò"
+        ]
+      },
+      "🐊": {
+        "tts": [
+          "ayɩwa"
+        ]
+      },
+      "🐢": {
+        "tts": [
+          "abʊŋajakpa"
+        ]
+      },
+      "🦎": {
+        "tts": [
+          "ʊwǝgǝu"
+        ]
+      },
+      "🐍": {
+        "tts": [
+          "ʊbu"
+        ]
+      },
+      "🐲": {
+        "tts": [
+          "nsampǝnnyanawili kaayɛ"
+        ]
+      },
+      "🐉": {
+        "tts": [
+          "nsampǝnnyanawili"
+        ]
+      },
+      "🦕": {
+        "tts": [
+          "asampǝmbʊrʊ soropooɖɩ"
+        ]
+      },
+      "🦖": {
+        "tts": [
+          "gʊyarɩsampǝmbʊrʊ"
+        ]
+      }
+    }
+  }
+}
